@@ -42,3 +42,9 @@
 .res-logo {
   width: 100%;
 }
+
+.filter-btn {
+  margin: 10px;
+  background-color: rgb(161, 149, 148);
+  cursor: pointer;
+}
