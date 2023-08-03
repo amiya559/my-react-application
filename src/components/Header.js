@@ -1,11 +1,14 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnLogin, setBtnLogin] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const data = useContext(UserContext);
+  console.log(data);
 
   return (
     <div className="flex justify-between bg-pink-200 shadow-lg">
